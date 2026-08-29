@@ -4,7 +4,8 @@ Testcase:
 Input: 456 → Output: 5
 Input: 569 → Output: 6 ''' 
 
+def get_tens(num):
+    return (num // 10) % 10
 
-num = int(input("Enter a three-digit number: "))
-tens = (num // 10) % 10
-print("The ten's digit is:", tens)
+num = int(input("Enter three-digit number: "))
+print(get_tens(num))

@@ -5,6 +5,8 @@ Input: 456 → Output: 6
 Input: 569 → Output: 9'''
 
 
-num = int(input("Enter a three-digit number: "))
-ones = num % 10
-print("The one's digit is:", ones)
+def get_ones(num):
+    return num % 10
+
+num = int(input("Enter three-digit number: "))
+print(get_ones(num))

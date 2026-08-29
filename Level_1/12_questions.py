@@ -4,9 +4,13 @@ Testcase:
 Input: 562 → Output: 13
 Input: 469 → Output: 19'''
 
-num = int(input("Enter a three-digit number: "))
-ones = num % 10
-tens = (num // 10) % 10
-hundreds = num // 100
-sum_of_digits = ones + tens + hundreds
-print("The sum of the digits is:", sum_of_digits)
+def sum_digits(num):
+    ones = num % 10
+    tens = (num // 10) % 10
+    hundreds = num // 100
+
+    return ones + tens + hundreds
+
+
+num = int(input("Enter three-digit number: "))
+print(sum_digits(num))

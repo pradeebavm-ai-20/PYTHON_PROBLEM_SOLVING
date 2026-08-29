@@ -4,8 +4,12 @@ Testcase:
 Input: 56 → Output: 11
 Input: 69 → Output: 15'''
 
-num = int(input("Enter a two-digit number: "))
-ones = num % 10
-tens = num // 10
-sum_of_digits = ones + tens
-print("The sum of the digits is:", sum_of_digits)
+def sum_digits(num):
+    ones = num % 10
+    tens = num // 10
+
+    return ones + tens
+
+
+num = int(input("Enter two-digit number: "))
+print(sum_digits(num))

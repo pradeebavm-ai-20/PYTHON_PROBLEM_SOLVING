@@ -7,6 +7,11 @@ Input: 56789 → Output: 56791
 """
 
 
-num = int(input("Enter the number: "))
-add = num+2
-print("The number add by 2 is:",add)
+def add(num):
+    return num + 2
+
+try:
+    num = int(input("Enter number: "))
+    print(add(num))
+except ValueError:
+    print("Please enter a valid number.")

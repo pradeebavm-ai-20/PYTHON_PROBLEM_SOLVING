@@ -7,6 +7,9 @@ Input: 1200 → Output: 3600'''
 
 
 
-num = int(input("Enter the number: "))
-mul = num*3
-print("The number multiply by 3 is:",mul)
+
+def multiply(num):
+    return num * 3
+
+num = int(input("Enter number: "))
+print(multiply(num))

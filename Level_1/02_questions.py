@@ -6,10 +6,9 @@ Input: 56789 → Output: 56784'''
 
 
 
-# exception handling
-try:
-    num = int(input("Enter the number: "))
-    sub = num-5
-    print("The number subtract by 5 is:",sub)
-except ValueError:
-    print("Please enter a valid integer.")
+
+def subtract(num):
+    return num - 5
+
+num = int(input("Enter number: "))
+print(subtract(num))

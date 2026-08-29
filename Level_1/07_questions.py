@@ -5,6 +5,9 @@ Input: 45 → Output: 4
 Input: 56 → Output: 5
 '''
 
-num = int(input("Enter a two-digit number: "))
-tens = num // 10
-print("The ten's digit is:", tens)
+
+def get_tens(num):
+    return num // 10
+
+num = int(input("Enter two-digit number: "))
+print(get_tens(num))

@@ -5,6 +5,8 @@ Input: 45 → Output: 5
 Input: 56 → Output: 6'''
 
 
-num = int(input("Enter a two-digit number: "))
-ones = num % 10
-print("The one's digit is:", ones)
+def get_ones(num):
+    return num % 10
+
+num = int(input("Enter two-digit number: "))
+print(get_ones(num))

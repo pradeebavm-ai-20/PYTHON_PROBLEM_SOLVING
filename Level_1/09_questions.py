@@ -5,6 +5,8 @@ Input: 456 → Output: 4
 Input: 569 → Output: 5'''
 
 
-num = int(input("Enter a three-digit number: "))
-hundreds = num // 100
-print("The hundred's digit is:", hundreds)
+def get_hundreds(num):
+    return num // 100
+
+num = int(input("Enter three-digit number: "))
+print(get_hundreds(num))
